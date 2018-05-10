@@ -1,15 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!--Meta-->
     <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Hello World!</h1>
-        <button id="btn">Click me</button>
-    </div>
-    <script src="index.js"></script>
-</body>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- CSS -->
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <!--JavaScript-->
+    <script src="index.js"></script>  
+  	<title> IronHacks first iteration </title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h1>Welcome to iRonMate!</h1>
+            </div>
+        </div>
+        <div class="row">        
+            <div class="col">                
+                  <h4>A very special app for NYU Stern School of Business students!</h4>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="col">
+                <div id="map"></div><!--divmapend-->
+            </div>            
+            <div class="col">           
+                        <h3>Here wil be your top 10</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2"> Cheapest places to live </th>
+                                    </tr>
+                                    <tr>
+                                        <th> 	Neighborhood Names GIS </th>
+                                        <th>    Price </th>
+                                    </tr>
+                                    <tbody id="mainTableBody">
+                                    </tbody>
+                                </thead>
+                            </table>
+            </div>  
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+                <nav class="navigator">
+                   <a href="#"><button type="button" name= "Button">Show me the cheapest!</button></a> 
+                   <a href="#"><button type="button" name= "Button">Show me the nearest!</button></a>
+                   <a href="#"><button type="button" name= "Button">Show me the safest!</button></a> 
+                </nav>
+            </div>
+         </div>
+         <footer>
+             <p class="pfooter">This webpage was created by Oscar Camilo Pulido Peña
+             <br>Creative commons
+             <br>Universidad Nacional de Colombia-Purdure University
+             <br>2018<br>
+             </p>
+         </footer>              
+    </div>            
+  </body>
+<!--ScriptGoogleKey-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbdsVRXEbLJACH2SVwObqCU5O6vRHL8SM&callback=nyMap"></script>
+<!--ScriptjQuery-->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
 </html>
